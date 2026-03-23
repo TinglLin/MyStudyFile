@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+
+    <label for="name"></label>
+    姓名:<input type="text" id="name"/> <br>
+    密码: <input type="password"> <br>
+    邮箱: <input type="email"> <br>
+    年龄: <input type="number"> <br>
+    生日: <input type="date"> <br>
+    简历:<input type="file"> <br>
+
+    <!--性别: <input type="radio" name="gender" checked="checked"> 男 <input type="radio" name="gender"> 女 <br>-->
+
+    性别:  <label for="gender1">男性</label><input type="radio" name="gender" id="gender1"> 男
+       <label for="gender2">女性</label><input id="gender2" type="radio" checked name="gender"> 女 <br>
+    爱好: <input type="checkbox"> python <input type="checkbox" checked> java <input type="checkbox"> mysql <br>
+
+    <!--下拉选择框-->
+
+    <select>
+        <option>广东</option>
+        <option>广西</option>
+        <!--<option selected="selected">湖南</option>-->
+        <option selected>湖南</option>
+        <option>湖北</option>
+    </select>
+
+    <br>
+    <!--colomns-->
+    <textarea cols="" rows=""></textarea>
+
+    <hr>
+    <!--隐藏域 比如更新用户时需要用到的id-->
+    <input type="hidden">
+
+    <!--定义普通按钮-->
+    <input type="button" value="普通按钮一个" onclick="alert('警告⚠️!!!')"> <br>
+    <!--重置按钮-->
+    <input type="reset" value="初始化"> <br>
+    <hr>
+    <!--提交表单按钮 点击提交表单可以把表单收集的数据推送给服务器-->
+    <input type="submit" value="我要提交">
+</form>
+
+</body>
+</html>

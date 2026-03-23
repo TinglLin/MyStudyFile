@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--.do .ation loginservlet-->
+
+<!--
+    如果表单以get方式提交给服务器资源 表单参数会拼接在url上 http://ip:port/资源路径?key1=value1&key2=value2
+    &  shift + 7
+    如果表单以post方式提交给服务器资源 表单参数会放在请求体中
+
+    get方式提交的参数有大小限制
+    post没有上限
+-->
+<!--<form action="htmldemo1.html" method="get">-->
+<form action="htmldemo1.html" method="post">
+    <!--在input中输入内容本质是在修改input的value属性值-->
+    姓名:<input type="text" id="name" name="username"/> <br>
+    密码: <input type="password" name="password"> <br>
+    邮箱: <input type="email" name="email" > <br>
+    年龄: <input type="number" name="age"> <br>
+    生日: <input type="date" name="birth"> <br>
+    简历:<input type="file" name="cv"> <br>
+
+    <!--删除当前行 ctrl + d-->
+    <!--格式化代码 ctrl + shift + f-->
+    <!--快速复制一行 ctrl + alt + ↓-->
+
+    性别: <input type="radio" name="gender" id="gender1" value="male"> 男
+    <input id="gender2" type="radio" checked name="gender" value="female"> 女 <br>
+    爱好: <input type="checkbox" name="hobby" value="python"> python
+    <input type="checkbox" name="hobby" checked value="java"> java
+    <input type="checkbox" value="mysql" name="hobby"> mysql <br>
+
+    <select name="province">
+        <option value="guangdong">广东</option>
+        <option value="guagnxi">广西</option>
+        <option selected value="hunan">湖南</option>
+        <option value="hubei">湖北</option>
+    </select>
+
+    <br>
+    <textarea cols="" rows="" name="desc"></textarea>
+    <hr>
+    <input type="hidden" name="id" value="1001">
+
+    <input type="button" value="普通按钮一个" onclick="alert('警告⚠️!!!')"> <br>
+    <input type="reset" value="初始化"> <br>
+    <hr>
+    <input type="submit" value="我要提交">
+</form>
+
+</body>
+</html>
