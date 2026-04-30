@@ -1,0 +1,27 @@
+# 安装包
+*.exe
+*.msi
+*.deb
+*.rpm
+
+# 压缩包
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# 镜像
+*.iso
+*.img
+
+# 视频
+*.mp4
+*.mkv
+*.mov
+*.avi
+
+# 大文件
+*.bin
+*.dat
+*.log
